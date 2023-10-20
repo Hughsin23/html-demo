@@ -4,8 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>responsive css</title>
-  <link rel="stylesheet" href="./resources/css/style.css">
+  <title>CSS Responsive</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,55 +34,62 @@
       <ul>
         <li>Sydney 12 Jul</li>
         <li>Melbourne 18 Jul</li>
-        <li>Adelaide 3 Jun</li>
+        <li>South AU. 3 Jun</li>
       </ul>
     </div>
 
-    <div class="newsletter form">
-      <form>
-        <h3>Newsletter</h3>
-        <label for="username">Name: </label>
-        <input type="text" name="username" id="username">
+    <form>
+      <h3>Newsletter</h3>
 
-        <label for="user-email">Email: </label>
-        <input type="email" name="user-email" id="user-email">
+      <label for="user-name">Name :</label>
+      <input type="text" name="user-name" id="user-name" required>
 
-        <button type="submit">Submit</button>
+      <label for="user-email">Email :</label>
+      <input type="email" name="user-email" id="user-email" required>
 
-      </form>
-    </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
   </aside>
+
   <main>
     <h1>Global Partners</h1>
-    <section class="partners">
-      <div class="partner">
+    <div class="cards">
+
+      <div class="card">
         <div class="image image-1"></div>
-        <p>Samsung</p>
+        <p class="partner">Samsung</p>
       </div>
-      <div class="partner">
+
+      <div class="card">
         <div class="image image-2"></div>
-        <p>IBM</p>
+        <p class="partner">IBM</p>
       </div>
-      <div class="partner">
+
+      <div class="card">
         <div class="image image-3"></div>
-        <p>Apple</p>
+        <p class="partner">Apple</p>
       </div>
-      <div class="partner">
+
+      <div class="card">
         <div class="image image-4"></div>
-        <p>Omega</p>
+        <p class="partner">Omega</p>
       </div>
-      <div class="partner">
+
+      <div class="card">
         <div class="image image-5"></div>
-        <p>HSBC</p>
+        <p class="partner">HSBC</p>
       </div>
-    </section>
+
+    </div>
   </main>
 
   <footer>
-    <p>
-      Copyright techMeetups &copy; 2023
-    </p>
+    <p>Copyright techMeetups&copy 2023</p>
   </footer>
+
 </body>
 
 </html>
